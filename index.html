@@ -103,6 +103,41 @@
     .custom-font {
       font-family: "jameel", serif;
     }
+
+    .achievements .achievement-box {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievements .achievement-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-img {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+.achievement-info {
+  padding: 20px;
+}
+
+.achievement-info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.achievement-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
   </style>
 
 
@@ -121,6 +156,7 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#achievements"><i class="bi bi-trophy navicon"></i><span>Achieve</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
@@ -236,6 +272,47 @@
 
     </section><!-- /About Section -->
 
+ <!-- Achievement Section -->
+<section id="achievements" class="achievements section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Achievements</h2>
+    <p>Recognizing Milestones and Celebrating Successes on the Path to Excellence</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row achievements-content">
+
+      <!-- Achievement Item 1 -->
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4">
+        <div class="achievement-box">
+          <img src="assets/img/achievements/teknofest.png" alt="Teknofest Top 50 Winner" class="img-fluid achievement-img">
+          <div class="achievement-info">
+            <h4>Teknofest Top 50 Winner</h4>
+            <p>Recognized among the top 50 participants at Teknofest, showcasing innovation and dedication in technology.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement Item 2 -->
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4">
+        <div class="achievement-box">
+          <img src="assets/img/achievements/nasa.png" alt="NASA Space App Challenge Global Nominee" class="img-fluid achievement-img">
+          <div class="achievement-info">
+            <h4>NASA Space App Challenge Global Nominee</h4>
+            <p>Selected as a global nominee in the prestigious NASA Space App Challenge, recognized for problem-solving and creativity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more achievement items as needed -->
+
+    </div>
+  </div>
+</section>
+
+
 
 
     <!-- Skills Section -->
@@ -255,7 +332,7 @@
             <div class="col-lg-6 col-sm-12">
 
               <div class="progress">
-                <span class="skill"><span>Flutter | Dart</span> <i class="val">75%</i></span>
+                <span class="skill"><span>Flutter | Dart</span> <i class="val">95%</i></span>
                 <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
                   <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                     style="border-radius: 10px;">
@@ -263,14 +340,14 @@
                 </div>
               </div><!-- End Skills Item -->
 
-              <!-- <div class="progress">
-                <span class="skill"><span>Power BI</span> <i class="val">70%</i></span>
+              <div class="progress">
+                <span class="skill"><span>Power BI</span> <i class="val">65%</i></span>
                 <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
                   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
                     style="border-radius: 10px;">
                   </div>
                 </div>
-              </div> -->
+              </div>
               <!-- End Skills Item -->
 
               <!-- <div class="progress">
@@ -292,7 +369,7 @@
               </div><!-- End Skills Item -->
 
               <div class="progress">
-                <span class="skill"><span>Sql | MySql | Oracle</span> <i class="val">80%</i></span>
+                <span class="skill"><span>Sql | MySql</span> <i class="val">80%</i></span>
                 <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
                   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                     style="border-radius: 10px;">
@@ -328,14 +405,14 @@
 
             <div class="col-lg-6 col-sm-12">
 
-              <!-- <div class="progress">
+              <div class="progress">
                 <span class="skill"><span>Firebase | SQLite | HiveDatabase</span> <i class="val">80%</i></span>
                 <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
                   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                     style="border-radius: 10px;">
                   </div>
                 </div>
-              </div> -->
+              </div>
               <!-- End Skills Item -->
 
               <!-- <div class="progress">
@@ -544,7 +621,7 @@
 
 
 
-]
+
             <!-- Portfolio Item 1: Al-Mushaf -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
               <img src="assets/img/portfolio/al mushaf.jpg" class="img-fluid" alt="Al-Quran">
@@ -553,6 +630,29 @@
                 <p>Complete Quran with recitation by Mishary Rashid Alafasy, featuring a clear and user-friendly
                   interface.</p>
                 <a href="https://github.com/Saaria-Zahid/DartAndFlutter/tree/main/Flutter/Assignments/al_quran_app" target="_blank" title="More Details"
+                  class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item 1 -->
+
+            <!-- Portfolio Item 1: Al-Quran -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+              <img src="assets/img/portfolio/al_quran.png" class="img-fluid" alt="Al-Quran">
+              <div class="portfolio-info">
+                <h4>Al-Quran App</h4>
+                <p>Complete Quran with recitation and Favourite Feature, featuring a clear and user-friendly
+                  interface.</p>
+                <a href="https://github.com/Saaria-Zahid/Islamic-App" target="_blank" title="More Details"
+                  class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item 1 -->
+
+            <!-- Portfolio Item 1: Scientific Calculator -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+              <img src="assets/img/portfolio/scientific_calculator.png" class="img-fluid" alt="Al-Quran">
+              <div class="portfolio-info">
+                <h4>Scientific Calculator</h4>
+                <p>Scientific Calculator is a Flutter app for basic and advanced math, featuring trigonometry, logs, square roots, exponentiation, and error handling in a sleek interface</p>
+                <a href="https://github.com/Saaria-Zahid/Scientific-Calculator-App/" target="_blank" title="More Details"
                   class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item 1 -->

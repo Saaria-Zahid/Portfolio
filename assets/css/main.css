@@ -69,8 +69,8 @@ body {
   max-width: 100%;
   width: 100%;
   padding: 0 15px; /* Add padding to ensure content doesn't touch the edge */
-  margin: 0 auto; /* Centers the content */
-}
+  /* margin: 0 auto; /* Centers the content */
+/* }  */
 
 /* Section Styles */
 .section {
