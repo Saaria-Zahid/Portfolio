@@ -108,9 +108,12 @@
   border-radius: 12px;
   overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
+
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .achievements .achievement-box:hover {
@@ -273,7 +276,7 @@
     </section><!-- /About Section -->
 
  <!-- Achievement Section -->
-<section id="achievements" class="achievements section">
+ <section id="achievements" class="achievements section">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -282,26 +285,26 @@
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row achievements-content">
+    <div class="row achievements-content flex-wrap">
 
       <!-- Achievement Item 1 -->
-      <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4">
-        <div class="achievement-box">
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4 d-flex">
+        <div class="achievement-box flex-fill">
           <img src="assets/img/achievements/teknofest.png" alt="Teknofest Top 50 Winner" class="img-fluid achievement-img">
           <div class="achievement-info">
-            <h4>Teknofest Top 50 Winner</h4>
-            <p>Recognized among the top 50 participants at Teknofest, showcasing innovation and dedication in technology.</p>
+            <h4>Teknofest Winner</h4>
+            <p>As a proud winner of Teknofest, I participated with a groundbreaking application that showcased innovative solutions to pressing technological challenges. Teknofest is renowned for attracting some of the most forward-thinking minds, and being recognized among them reflects the creativity, dedication, and technical prowess put into this project. This achievement highlights a commitment to pushing boundaries and contributing impactful ideas to the tech world.</p>
           </div>
         </div>
       </div>
 
       <!-- Achievement Item 2 -->
-      <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4">
-        <div class="achievement-box">
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4 d-flex">
+        <div class="achievement-box flex-fill">
           <img src="assets/img/achievements/nasa.png" alt="NASA Space App Challenge Global Nominee" class="img-fluid achievement-img">
           <div class="achievement-info">
             <h4>NASA Space App Challenge Global Nominee</h4>
-            <p>Selected as a global nominee in the prestigious NASA Space App Challenge, recognized for problem-solving and creativity.</p>
+            <p>Selected as a global nominee in the NASA Space Apps Challenge, I developed a pioneering game aimed at raising awareness about climate change. The project, themed “Tell Us a Climate Story,” engaged users in saving the Earth through interactive gameplay, promoting education on environmental issues.</p>
           </div>
         </div>
       </div>
@@ -311,6 +314,7 @@
     </div>
   </div>
 </section>
+
 
 
 
@@ -653,6 +657,16 @@
                 <h4>Scientific Calculator</h4>
                 <p>Scientific Calculator is a Flutter app for basic and advanced math, featuring trigonometry, logs, square roots, exponentiation, and error handling in a sleek interface</p>
                 <a href="https://github.com/Saaria-Zahid/Scientific-Calculator-App/" target="_blank" title="More Details"
+                  class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item 1 -->
+            <!-- Portfolio Item 1: Scientific Calculator -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+              <img src="assets/img/portfolio/save_earth.png" class="img-fluid" alt="Al-Quran">
+              <div class="portfolio-info">
+                <h4>Save Earth Game</h4>
+                <p>The Save Earth Game is a choice-driven app built in Flutter to promote environmental awareness. Through interactive gameplay, users make decisions on global challenges, receiving real-time feedback on each action’s impact. This helps players understand sustainable practices and encourages eco-friendly behaviors for a healthier planet.</p>
+                <a href="https://github.com/Saaria-Zahid/SaveEarthGame-Flutter" target="_blank" title="More Details"
                   class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item 1 -->
